@@ -14,8 +14,13 @@
     {% include 'inc/_nav.html' %}
     <div class="container mt-3">
         <div class="row">
-            {% block sidebar %}11{% endblock %}
-            {% block content %}22{% endblock %}
+            <div class="col-md-3">
+                {% block sidebar %}11{% endblock %}
+            </div>
+            <div class="col-md-9">
+                {% block content %}22{% endblock %}
+            </div>
+
         </div>
     </div>
 
