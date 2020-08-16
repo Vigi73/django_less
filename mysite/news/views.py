@@ -8,7 +8,7 @@ def index(request):
     context = {
         'news': news,
         'title': 'Список новостей',
-        'category': categories
+        'categories': categories
     }
     return render(request, 'news/index.html', context=context)
 
